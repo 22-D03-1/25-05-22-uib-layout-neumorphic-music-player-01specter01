@@ -10,14 +10,16 @@ html {
 }
 
 :root {
-    --primary: #e4e2e2;
+    --primary: #e8e8e8;
     --grayish: #3d3c38;
+    --blueish: #6bc2e4;
 }
 html body {
     height: 100%;
     width: 100%;
 }
 body {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +45,6 @@ main {
     height: 90%;
     border-radius: 15px;
     background-color: var(--primary);
-    gap: 1rem;
 }
 button {
     border: 0px;
@@ -62,6 +63,9 @@ button {
     aspect-ratio: 1/1;
     width: 70%;
     border-radius: 50%;
+    border-radius: 50%;
+    background: #e0e0e0;
+    box-shadow: -6px 6px 12px #505050, 6px -6px 12px #ffffff;
 }
 
 #power {
@@ -115,7 +119,7 @@ button {
     padding: 25px;
     color: var(--grayish);
     font-size: xx-large;
-    color: #6bc2e4;
+    color: var(--blueish);
 }
 
 #head {
@@ -172,7 +176,6 @@ footer {
 section {
     display: flex;
     justify-content: center;
-    padding: 2rem;
 }
 section div {
     display: flex;
@@ -182,7 +185,6 @@ section div {
 }
 article {
     display: flex;
-
     justify-content: center;
     padding: 2rem;
 }
@@ -197,8 +199,40 @@ article div {
 }
 #songname {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     align-content: center;
     color: var(--grayish);
+}
+#grad1 {
+    width: 75%;
+    position: relative;
+    top: auto;
+    left: 12.5%;
+    height: 10px;
+    background: linear-gradient(
+        0.25turn,
+        #a2c7ff 10%,
+        #3284ff 25% 35%,
+        #37d7ff 60%,
+        #88e7ff 69%,
+        white 69% 100%
+    );
+    border-radius: 80px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: solid 1px rgb(198, 198, 198);
+}
+button {
+    width: 45%;
+    position: relative;
+    top: auto;
+    left: 28.5%;
+    height: 8px;
+    border-radius: 80px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    background: #e0e0e0;
+    box-shadow: inset -18px 18px 47px #5a5a5a, inset 18px -18px 47px #ffffff;
 }

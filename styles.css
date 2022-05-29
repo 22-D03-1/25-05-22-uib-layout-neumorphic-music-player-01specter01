@@ -36,16 +36,31 @@ main {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1rem;
     align-items: center;
 }
 header button {
-    height: 70px;
-    padding: 20px;
     background-color: var(--primary);
     border: none;
     border-radius: 0.5rem;
-    aspect-ratio: 1/1;
+}
+#lupe {
+    display: flex;
+    padding: 25px;
+    color: var(--grayish);
+    font-size: x-large;
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: inset 17px 17px 34px #bababa, inset -17px -17px 34px #ffffff;
+}
+#power {
+    display: flex;
+    padding: 25px;
+    font-size: x-large;
+    color: red;
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: inset 17px 17px 34px #bababa, inset -17px -17px 34px #ffffff;
 }
 
 button {
@@ -56,28 +71,6 @@ button {
     font-weight: bold;
 }
 
-#power {
-    display: flex;
-    padding: 15px;
-    color: var(--grayish);
-    font-size: x-large;
-    color: red;
-    border-radius: 37px;
-    background: #e0e0e0;
-    box-shadow: inset 25px 25px 27px #d0d0d0, inset -25px -25px 27px #f0f0f0;
-}
-
-#lupe {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    padding: 15px;
-    color: var(--grayish);
-
-    border-radius: 37px;
-    background: #e0e0e0;
-    box-shadow: inset 25px 25px 27px #d0d0d0, inset -25px -25px 27px #f0f0f0;
-}
 .bandbild {
     display: flex;
     flex-direction: column;
@@ -108,29 +101,8 @@ button {
     border-radius: 0.5rem;
 }
 
-#lupe {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    align-content: space-between;
-    padding: 15px;
-    color: var(--grayish);
-    font-size: x-large;
-    background-color: rgb(247, 246, 246);
-    box-shadow: inset 20px 20px 40px rgb(194, 194, 194),
-        30px 30px 44px rgb(217, 217, 217), 40px 40px 42px rgb(231, 231, 231);
-    border-radius: 10px;
-}
-
-.controles {
-    padding: 0.4rem;
-    display: flex;
-    justify-content: space-between;
-}
-
 section {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
 }
 section div {
@@ -172,7 +144,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    padding: 0.4rem;
 }
 article div {
     display: flex;
@@ -180,6 +152,7 @@ article div {
     align-items: center;
 }
 #songname {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;

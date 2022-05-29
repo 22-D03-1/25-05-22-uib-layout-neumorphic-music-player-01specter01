@@ -27,20 +27,17 @@ body {
 }
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 2rem;
 }
 header button {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
     background-color: var(--primary);
 }
 main {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    flex-grow: 1;
+
     width: 100%;
     height: 90%;
     border-radius: 15px;
@@ -49,6 +46,9 @@ main {
 button {
     border: 0px;
     border-radius: 0px;
+}
+.thickfont {
+    font-weight: bold;
 }
 
 .bandbild {
@@ -69,32 +69,26 @@ button {
 }
 
 #power {
+    display: flex;
     padding: 15px;
     color: var(--grayish);
     font-size: x-large;
     color: red;
-    background-color: rgb(247, 246, 246);
-    box-shadow: inset 20px 20px 40px rgb(194, 194, 194),
-        30px 30px 44px rgb(217, 217, 217), 40px 40px 42px rgb(231, 231, 231);
-    border-radius: 10px;
+    border-radius: 37px;
+    background: #e0e0e0;
+    box-shadow: inset 25px 25px 27px #d0d0d0, inset -25px -25px 27px #f0f0f0;
 }
-.lupe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
+
 #lupe {
     display: flex;
     flex-direction: row;
     align-content: space-between;
     padding: 15px;
     color: var(--grayish);
-    font-size: x-large;
-    background-color: rgb(247, 246, 246);
-    box-shadow: inset 20px 20px 40px rgb(194, 194, 194),
-        30px 30px 44px rgb(217, 217, 217), 40px 40px 42px rgb(231, 231, 231);
-    border-radius: 10px;
+
+    border-radius: 37px;
+    background: #e0e0e0;
+    box-shadow: inset 25px 25px 27px #d0d0d0, inset -25px -25px 27px #f0f0f0;
 }
 #back {
     position: absolute;

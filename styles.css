@@ -156,10 +156,6 @@ article div {
     font-size: larger;
     color: black;
     margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    align-content: center;
     color: var(--grayish);
 }
 #artist {
@@ -169,9 +165,9 @@ article div {
     font-size: x-large;
 }
 #progressbar {
-    display: flex;
+    max-width: 100%;
+    margin: 0 20px 0 20px;
 
-    width: 80vw;
     height: 0.6rem;
     background: rgb(126, 190, 249);
     background: linear-gradient(

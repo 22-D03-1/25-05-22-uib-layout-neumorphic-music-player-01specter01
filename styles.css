@@ -95,38 +95,7 @@ button {
     background: #e0e0e0;
     box-shadow: inset 25px 25px 27px #d0d0d0, inset -25px -25px 27px #f0f0f0;
 }
-#back {
-    position: absolute;
-    bottom: 12vh;
-    left: 6vw;
-    padding: 25px;
-    color: var(--grayish);
-    font-size: xx-large;
-}
-#forward {
-    position: absolute;
-    bottom: 12vh;
-    right: 6vw;
-    padding: 25px;
-    color: var(--grayish);
-    font-size: xx-large;
-}
-#play {
-    position: absolute;
-    bottom: 12vh;
-    right: 41%;
-    padding: 25px;
-    color: var(--grayish);
-    font-size: xx-large;
-    color: var(--blueish);
-}
 
-#head {
-    position: absolute;
-    top: 3vh;
-    left: 20vw;
-    padding: 25px;
-}
 #songname {
     margin-bottom: 40px;
 }
@@ -163,24 +132,51 @@ button {
     display: flex;
     justify-content: space-between;
 }
-footer {
-    padding: 0 8rem;
-}
-.footer-bar {
-    height: 0.25rem;
-    width: 100%;
-    border-radius: 0.25rem;
-    background-color: black;
-}
+
 section {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 section div {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
+    height: 70px;
+    padding: 30px;
     background-color: var(--primary);
+    border: none;
+    border-radius: 0.5rem;
+    aspect-ratio: 1/1;
+}
+#back {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    color: var(--grayish);
+    font-size: xx-large;
+    border-radius: 20px;
+    background: linear-gradient(225deg, #cacaca, #f0f0f0);
+    box-shadow: -20px 20px 33px #dedede, 20px -20px 33px #e2e2e2;
+}
+
+#play {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    color: var(--grayish);
+    font-size: xx-large;
+    color: var(--blueish);
+    border-radius: 20px;
+    background: linear-gradient(225deg, #cacaca, #f0f0f0);
+    box-shadow: -20px 20px 33px #dedede, 20px -20px 33px #e2e2e2;
+}
+#forward {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    color: var(--grayish);
+    font-size: xx-large;
+    border-radius: 20px;
+    background: linear-gradient(225deg, #cacaca, #f0f0f0);
+    box-shadow: -20px 20px 33px #dedede, 20px -20px 33px #e2e2e2;
 }
 article {
     display: flex;
@@ -226,8 +222,8 @@ button {
     border: solid 1px rgb(198, 198, 198);
 }
 #dividerbar {
-    justify-content: center;
-    align-content: center;
+    display: flex;
+    align-items: center;
     width: 60%;
     height: 0.4rem;
     border-radius: 19px;

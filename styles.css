@@ -32,6 +32,9 @@ main {
     height: 90%;
     border-radius: 15px;
     background-color: var(--primary);
+    border-radius: 11px;
+    background: #e0e0e0;
+    box-shadow: 21px 21px 58px #bebebe, -21px -21px 58px #ffffff;
 }
 header {
     display: flex;
@@ -68,7 +71,8 @@ button {
     border-radius: 0px;
 }
 .thickfont {
-    font-weight: bold;
+    font-weight: 800;
+    font-size: large;
 }
 
 .bandbild {
@@ -90,10 +94,14 @@ button {
 
 #songname {
     margin-bottom: 40px;
+    font-weight: 500;
+    color: black;
 }
 #artist {
     padding: 0.5rem;
-    color: rgb(81, 81, 81);
+    color: rgb(99, 99, 99);
+    font-weight: 800;
+    font-size: x-large;
 }
 .progress-bar {
     height: 0.5rem;
@@ -166,11 +174,9 @@ button {
 
 #progressbar {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    align-content: center;
-    width: 100%;
-
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     height: 0.6rem;
     background: rgb(126, 190, 249);
     background: linear-gradient(
@@ -189,7 +195,6 @@ button {
 }
 aside {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding: 2rem;
     margin-bottom: 0.3rem;

@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     font-family: "Inter", sans-serif;
 }
@@ -14,16 +15,19 @@ html {
     --grayish: #3d3c38;
     --blueish: #6bc2e4;
 }
+
 html body {
     height: 100%;
     width: 100%;
 }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -36,17 +40,20 @@ main {
     background: #e0e0e0;
     box-shadow: 21px 21px 58px #bebebe, -21px -21px 58px #ffffff;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 0.8rem 1rem;
     align-items: center;
 }
+
 header button {
     background-color: var(--primary);
     border: none;
     border-radius: 0.5rem;
 }
+
 #lupe {
     display: flex;
     padding: 25px;
@@ -56,6 +63,7 @@ header button {
     background: #e0e0e0;
     box-shadow: inset 17px 17px 34px #bababa, inset -17px -17px 34px #ffffff;
 }
+
 #power {
     display: flex;
     padding: 25px;
@@ -70,6 +78,7 @@ button {
     border: 0px;
     border-radius: 0px;
 }
+
 .thickfont {
     font-weight: 800;
     font-size: large;
@@ -103,12 +112,14 @@ section {
     display: flex;
     justify-content: space-evenly;
 }
+
 section div {
     background-color: var(--primary);
     border: none;
     border-radius: 0.5rem;
     aspect-ratio: 1/1;
 }
+
 #back {
     display: flex;
     padding: 25px;
@@ -129,6 +140,7 @@ section div {
     background: linear-gradient(225deg, #cacaca, #f0f0f0);
     box-shadow: -20px 20px 33px #dedede, 20px -20px 33px #e2e2e2;
 }
+
 #forward {
     display: flex;
     padding: 25px;
@@ -138,12 +150,14 @@ section div {
     background: linear-gradient(225deg, #cacaca, #f0f0f0);
     box-shadow: -20px 20px 33px #dedede, 20px -20px 33px #e2e2e2;
 }
+
 article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0.4rem;
 }
+
 article div {
     display: flex;
     flex-direction: column;
@@ -158,12 +172,14 @@ article div {
     margin-top: 20px;
     color: var(--grayish);
 }
+
 #artist {
     margin-bottom: 40px;
     color: rgb(99, 99, 99);
     font-weight: 800;
     font-size: x-large;
 }
+
 #progressbar {
     max-width: 100%;
     margin: 0 20px 0 20px;
@@ -185,17 +201,20 @@ article div {
     border: solid 1px rgb(198, 198, 198);
     margin-bottom: 2rem;
 }
+
 aside {
     display: flex;
     justify-content: center;
     padding: 2rem;
     margin-bottom: 0.3rem;
 }
+
 aside div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 #dividerbar {
     display: flex;
     justify-content: center;
